@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Service
+MimeType=image/png;image/jpeg
+Actions=setAsWallpaper;setDefaultWallpaper;
+X-KDE-Submenu=Use As Wallpaper
+
+[Desktop Action setAsWallpaper]
+Name=Set As Wallpaper
+Icon=background
+Exec=~/.config/hypr/setWallpaperScript/wallpaper %u
+
+[Desktop Action setDefaultWallpaper]
+Name=Set As Default Wallpaper
+Icon=background
+Exec=~/.config/hypr/setWallpaperScript/wallpaper %u DEFAULT

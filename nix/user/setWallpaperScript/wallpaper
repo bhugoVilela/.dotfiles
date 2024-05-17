@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+hyprctl hyprpaper preload $1
+hyprctl hyprpaper wallpaper HDMI-A-1,$1
+
+if [ "$2" = "DEFAULT" ]; then
+	echo "preload = $1" > $HOME/.dotfiles/user/hyprpaper.conf
+	echo "wallpaper = HDMI-A-1,$1" >> $HOME/.dotfiles/user/hyprpaper.conf
+	home-manager switch --flake $HOME/.dotfiles
+fi
