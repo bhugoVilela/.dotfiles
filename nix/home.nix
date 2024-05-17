@@ -113,6 +113,7 @@
 	  ".." = "cd ..";
 	  "Oil" = "nvim -c Oil";
 	  "oil" = "nvim -c Oil";
+	  "gpt" = "nvim -c 'GpChatNew'";
 	};
 
   };
@@ -126,6 +127,9 @@
 	shellAliases = {
 	  ll   = "ls -l";
 	  ".." = "cd ..";
+	  "Oil" = "nvim -c Oil";
+	  "oil" = "nvim -c Oil";
+	  "gpt" = "nvim -c 'GpChatNew'";
 	};
 
   };
