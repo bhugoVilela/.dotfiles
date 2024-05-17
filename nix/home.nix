@@ -28,6 +28,8 @@
     };
   };
 
+  xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.dotfiles/nvim";
+
   programs.git = {
     package = pkgs.gitAndTools.gitFull;
     enable  = true;
@@ -109,6 +111,8 @@
 	shellAliases = {
 	  ll   = "ls -l";
 	  ".." = "cd ..";
+	  "Oil" = "nvim -c Oil";
+	  "oil" = "nvim -c Oil";
 	};
 
   };
